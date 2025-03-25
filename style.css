@@ -1,0 +1,397 @@
+/* Garantir que a página não ultrapasse a largura da tela */
+html,
+body {
+    width: 101%;
+    height: 100%;
+    overflow-x: hidden;
+    /* Impede o overflow horizontal */
+    margin: 0;
+}
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    overflow-x: hidden;
+    /* Impede o overflow horizontal */
+}
+
+h1,
+h2,
+h3 {
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px 0;
+    text-align: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10%;
+    box-sizing: border-box;
+    /* Garante que o padding não afete a largura */
+}
+
+header .logo h1 {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+header nav ul li a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+header nav ul li a:hover {
+    color: #ff4081;
+}
+
+/* Seção de Introdução */
+.hero {
+    background-image: url('img/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+    color: white;
+    text-align: center;
+    box-sizing: border-box;
+    /* Garante que o padding não afete a largura */
+}
+
+.hero h2 {
+    font-size: 48px;
+}
+
+.hero .btn {
+    padding: 10px 20px;
+    background-color: #ff4081;
+    color: white;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+/* Seção de Serviços */
+.services {
+    background-color: #fdfdfd;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.service-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.service-item {
+    background: #fff;
+    padding: 20px;
+    width: 280px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.service-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.service-item h3 {
+    font-size: 22px;
+    color: #ff4081;
+}
+
+.service-item p {
+    font-size: 16px;
+    color: #555;
+    margin: 10px 0;
+}
+
+.service-item strong {
+    color: #333;
+    font-size: 18px;
+}
+
+/* Seção de Testemunhos */
+.testimonials {
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.testimonial-item {
+    background: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.testimonial-item:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.testimonial-item p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.5;
+}
+
+.testimonial-item span {
+    display: block;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ff4081;
+}
+
+/* Galeria de Fotos */
+.gallery {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.gallery-images {
+    display: flex;
+    justify-content: space-around;
+}
+
+.gallery-images img {
+    width: 25%;
+    border-radius: 460%;
+}
+
+/* Formulário de Agendamento */
+.booking {
+    background-color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.booking form {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.booking input,
+.booking select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.booking button {
+    background-color: #ff4081;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 16px;
+    position: relative;
+    width: 100%;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer a {
+    color: #ff4081;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+footer a:hover {
+    color: #ff79a5;
+}
+
+footer p a {
+    color: #ff4081;
+    text-decoration: none;
+}
+
+footer p a:hover {
+    color: #ff79a5;
+}
+
+/* Estilo para a imagem hero (imagem de fundo no topo da página) */
+.imgc {
+    position: relative;
+    top: -100px;
+    left: -10%;
+    width: 130%;
+    height: 300px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgc img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Responsividade */
+@media (max-width: 1200px) {
+    header {
+        padding: 15px 5%;
+    }
+
+    .hero h2 {
+        font-size: 36px;
+    }
+
+    .service-item {
+        width: 220px;
+    }
+
+    .gallery-images img {
+        width: 30%;
+        border-radius: 10px;
+    }
+
+    .testimonial-item {
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+
+
+    .hero h2 {
+        font-size: 30px;
+        /* Ajuste a fonte para telas menores */
+    }
+
+
+    .service-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .gallery-images {
+        flex-direction: column;
+    }
+
+    .gallery-images img {
+        width: 80%;
+        margin-bottom: 20px;
+        border-radius: 10px;
+    }
+
+    .testimonial-item {
+        max-width: 90%;
+    }
+
+    .booking form {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    header .logo h1 {
+        font-size: 24px;
+    }
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header .logo h1 {
+        font-size: 24px;
+    }
+    .hero h2 {
+        font-size: 24px;
+    }
+
+    .service-item {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .services h2 {
+        font-size: 28px;
+    }
+
+    .testimonial-item {
+        max-width: 100%;
+    }
+
+    footer p {
+        font-size: 14px; /* Ajuste do tamanho da fonte */
+        padding: 15px 10px;
+    }
+
+    .booking form {
+        max-width: 100%;
+    }
+}

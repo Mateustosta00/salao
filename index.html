@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salão de Beleza - Yara</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <header>
+
+        <nav>
+            <ul>
+
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#agendamento">Agendamento</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção de Introdução -->
+    <section id="sobre" class="hero">
+        <div class="hero-content">
+            <div class="imgc">
+                <img src="img/lindsay-cash-Md_DhaFsnCQ-unsplash.jpg" alt="imag">
+            </div>
+
+            <a href="#agendamento" class="btn">Agende Seu Horário</a>
+        </div>
+    </section>
+
+    <!-- Seção de Serviços -->
+    <section id="servicos" class="services">
+        <h2>Serviços Oferecidos</h2>
+        <div class="service-list">
+            <div class="service-item">
+                <a href="#agendamento">
+                    <h3>Corte de Cabelo</h3>
+                    <p>Renove seu visual com um corte incrível.</p>
+                    <p><strong>Preço:</strong> R$ 50,00</p>
+                </a>
+            </div>
+            <div class="service-item">
+                <a href="#agendamento">
+                    <h3>Manicure e Pedicure</h3>
+                    <p>Deixe suas mãos e pés impecáveis.</p>
+                    <p><strong>Preço:</strong> R$ 40,00</p>
+                </a>
+            </div>
+            <div class="service-item">
+                <a href="#agendamento">
+                    <h3>Maquiagem</h3>
+                    <p>Prepare-se para brilhar em qualquer evento.</p>
+                    <p><strong>Preço:</strong> R$ 80,00</p>
+                </a>
+            </div>
+            <div class="service-item">
+                <a href="#agendamento">
+                    <h3>Escova e Penteado</h3>
+                    <p>Fique deslumbrante com uma escova ou penteado de festa.</p>
+                    <p><strong>Preço:</strong> R$ 60,00</p>
+                </a>
+            </div>
+            <div class="service-item">
+                <a href="#agendamento">
+                    <h3>Design de Sobrancelhas</h3>
+                    <p>Deixe seu olhar ainda mais marcante com o design de sobrancelhas.</p>
+                    <p><strong>Preço:</strong> R$ 35,00</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Seção de Testemunhos -->
+    <section id="testemunhos" class="testimonials">
+        <h2>O que nossos clientes dizem</h2>
+        <div class="testimonial-item">
+            <p>"Amei meu novo corte de cabelo! O atendimento foi excelente e o ambiente super acolhedor."</p>
+            <span>- Ana Souza</span>
+        </div>
+        <div class="testimonial-item">
+            <p>"Melhor manicure e pedicure que já fiz! Recomendo muito o Salão Yara!"</p>
+            <span>- Maria Oliveira</span>
+        </div>
+    </section>
+    <!-- seleção de fotos --->
+    <section id="galeria" class="gallery">
+        <h2>Galeria de Fotos</h2>
+        <div class="gallery-images">
+            <img src="img/pexels-photo-3997379.jpeg" alt="Corte de cabelo">
+            <img src="img/pexels-cottonbro-3993447.jpg" alt="Manicure e Pedicure">
+            <img src="img/pexels-shkrabaanthony-5178009.jpg" alt="Maquiagem">
+        </div>
+    </section>
+    <!-- Formulário de Agendamento -->
+    <section id="agendamento" class="booking">
+        <h2>Agende Seu Horário</h2>
+        <form action="https://api.sheetmonkey.io/form/whTmJwpAgsbiNvMMCf3YR8" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required placeholder="Digite seu nome">
+
+            <label for="contato">Contato:</label>
+            <input type="tel" id="contato" name="contato" required placeholder="(XX) XXXXX-XXXX">
+
+            <label for="servico">Escolha o Serviço:</label>
+            <select id="servico" name="servico" required>
+                <option value="corte">Corte de Cabelo</option>
+                <option value="manicure">Manicure e Pedicure</option>
+                <option value="maquiagem">Maquiagem</option>
+                <option value="escova">Escova e Penteado</option>
+                <option value="sobrancelha">Design de Sobrancelhas</option>
+            </select>
+
+            <label for="data">Escolha a Data:</label>
+            <input type="text" id="data" name="data" required placeholder="Escolha a data">
+            <label for="hora">Escolha a Hora:</label>
+
+            <select id="hora" name="hora" required>
+                <option value="08:00">08:00</option>
+                <option value="08:30">08:30</option>
+                <option value="09:00">09:00</option>
+                <option value="09:30">09:30</option>
+                <option value="10:00">10:00</option>
+                <option value="10:30">10:30</option>
+                <option value="11:00">11:00</option>
+                <option value="11:30">11:30</option>
+                <option value="12:00">12:00</option>
+                <option value="12:30">12:30</option>
+                <option value="13:00">13:00</option>
+                <option value="13:30">13:30</option>
+                <option value="14:00">14:00</option>
+                <option value="14:30">14:30</option>
+                <option value="15:00">15:00</option>
+                <option value="15:30">15:30</option>
+                <option value="16:00">16:00</option>
+                <option value="16:30">16:30</option>
+                <option value="17:00">17:00</option>
+                <option value="17:30">17:30</option>
+                <option value="18:00">18:00</option>
+            </select>
+
+            <button type="button" id="submitBtn">Enviar</button>
+
+        </form>
+
+    </section>
+
+
+    <!-- Rodapé -->
+    <footer id="contato">
+        <p>&copy; 2025 Salão Yara | Todos os direitos reservados</p>
+        <p>Endereço: Rua da Beleza, 123
+        <p>Redes sociais:
+            <a href="https://www.instagram.com/salaoyiaraalves/" target="_blank">Instagram</a> |
+
+        </p>
+        <p>Veja nossa localização: <a href="https://maps.app.goo.gl/qquAaVwTy83rhaxo6" target="_blank">Google Maps</a>
+        </p>
+    </footer>
+
+</body>
+
+</html>
