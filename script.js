@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Função para enviar os dados para a API
     function enviarParaAPI(dados) {
         console.log("Enviando dados para a API:", dados);  // Log dos dados enviados
-        return fetch("https://api.sheetmonkey.io/form/whTmJwpAgsbiNvMMCf3YR8", {
+        return fetch("https://api.sheetmonkey.io/form/aQUS9GMFjSnWkqRM9hnqE", {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
